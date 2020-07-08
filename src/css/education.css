@@ -1,0 +1,47 @@
+.edu-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+  color: #444649;
+}
+.edu_container {
+  margin-bottom: 100px;
+}
+.edu-header-border {
+  text-align: center;
+  height: 4px;
+  width: 70px;
+  background: #444649;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.down_arrow {
+  float: right;
+  align-items: center;
+}
+.ad_header {
+  background-color: #495aff !important;
+  color: #fff !important;
+  font-size: 20px;
+}
+.ad_subheader {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.edu_link {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .ad_header {
+    background-color: #495aff !important;
+    color: #fff !important;
+    font-size: 16px;
+  }
+  .edu-header {
+    font-size: 40px;
+  }
+}

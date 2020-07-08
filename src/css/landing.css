@@ -1,0 +1,149 @@
+.programming_img {
+  top: 0;
+  left: 0;
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+.photo_center {
+  display: flex;
+  justify-content: center;
+}
+.my_photo {
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  border: 10px solid #fafafa;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 150px;
+  text-align: center;
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+  z-index: 1;
+}
+.backGround {
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  border-top: 1px solid transparent;
+}
+
+.imgMargin {
+  margin-top: 150px;
+  text-align: center;
+  color: #fafafa;
+}
+.heythere {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 0 !important;
+}
+.heading {
+  color: #fafafa;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding-top: 0.4rem;
+}
+.subHeader {
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.social-icon {
+  display: inline;
+  font-size: 24px;
+  padding: 20px;
+}
+.git {
+  color: #fafafa;
+  padding: 0px 10px;
+}
+.git:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.insta {
+  color: #fafafa;
+  padding: 0px 10px;
+}
+.insta:hover {
+  color: #dd2a7b;
+}
+
+.fb {
+  color: #fafafa;
+  padding: 0px 10px;
+}
+.fb:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.yt {
+  color: #fafafa;
+  padding: 0px 10px;
+}
+.yt:hover {
+  color: red;
+}
+
+.linkedin {
+  color: #fafafa;
+  padding: 0px 10px;
+}
+.linkedin:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.downarrow {
+  margin-top: 2rem;
+  font-size: 30px;
+  margin-right: 5px;
+  transform: translateY(-50%);
+  animation: down_arrow 1.8s linear 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes down_arrow {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  75% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.curve {
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.afterbg {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+.id_link {
+  color: inherit;
+}
+.id_link:hover {
+  color: inherit;
+}
+@media only screen and (max-device-width: 600px) {
+  .heading {
+    letter-spacing: 0px;
+    font-size: 38px;
+  }
+}

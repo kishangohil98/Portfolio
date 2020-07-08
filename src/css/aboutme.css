@@ -1,0 +1,97 @@
+.main {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 5;
+}
+
+.main::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  background-image: url("../images/blob.png");
+  background-repeat: no-repeat;
+  background-position: -5% 30%;
+  background-size: 20rem;
+}
+.about-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+  color: #444649;
+}
+.header-border {
+  text-align: center;
+  height: 4px;
+  width: 70px;
+  background: #444649;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.container_about {
+  margin-bottom: 100px;
+}
+.about_me {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+.blob1 {
+  position: absolute;
+}
+.about_me h3 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #0082c8;
+  text-align: center;
+}
+.about_me p {
+  font-size: 18px;
+  text-align: center;
+}
+.high_light {
+  color: #0082c8;
+}
+.about_skills h3 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #0082c8;
+  text-align: center;
+}
+.skills p {
+  text-align: center;
+}
+
+.skill {
+  display: inline-block;
+  color: #fff;
+  background-color: #0082c8;
+  border: 1px solid inherit;
+  padding: 10px 15px;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+}
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+.skill_icon {
+  margin-right: 0.7rem;
+}
+@media only screen and (max-device-width: 600px) {
+  .about_skills {
+    margin-top: 20px;
+  }
+  .about-header {
+    font-size: 40px;
+  }
+}
