@@ -40,18 +40,20 @@ export default function Landing() {
             <div className="wow animate__animated animate__fadeInUp">
               <p className="heythere ">hey there !</p>
               <h1 className="heading ">I am Kishan Gohil</h1>
-              <h4 className="subHeader">React-Redux Developer</h4>
+              <h4 className="subHeader">Javascript Developer</h4>
             </div>
             <div className="social-icon">
               <a
                 href="https://github.com/kishangohil98"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="git">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
               <a
                 href="https://www.instagram.com/key_son_gohel/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="insta">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -59,18 +61,21 @@ export default function Landing() {
               <a
                 href="https://www.linkedin.com/in/kishan-gohil-9941a3193/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="linkedin">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCm7pEIDEIUwbZe0zxUwdG_Q"
                 className="yt"
+                rel="noopener noreferrer"
                 target="_blank">
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
               <a
                 href="https://www.facebook.com/kishan.gohil.58323431/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fb">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>

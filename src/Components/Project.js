@@ -93,7 +93,7 @@ export default function Project() {
                     <div className="pro_border"></div>
                     <div className="pb-3 pt-3">
                       <FontAwesomeIcon icon={faLink} className="pro_icon" />
-                      <a href="http://aksharlining.ml/" target="_blank">
+                      <a href="http://aksharlining.ml/" target="_blank" rel="noopener noreferrer">
                         http://aksharlining.ml/
                       </a>
                     </div>

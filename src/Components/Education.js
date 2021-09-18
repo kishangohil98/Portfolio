@@ -71,6 +71,7 @@ export default function Education() {
                     Summer Internship 2019 at{" "}
                     <a
                       href="https://www.theonewebtechnology.com/"
+                      rel="noopener noreferrer"
                       target="_blank">
                       TheOneWebTechnology
                     </a>
@@ -103,7 +104,7 @@ export default function Education() {
                   <Card.Body>
                     I successfully completed 15 total hours of Front-end
                     development course provided by{" "}
-                    <a href="https://www.udemy.com/" target="_blank">
+                    <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">
                       Udemy
                     </a>
                     . It was a great experience to complete the course, I got
@@ -131,7 +132,7 @@ export default function Education() {
                 <Accordion.Collapse eventKey="3">
                   <Card.Body>
                     I was enrolled in Core Java and Advanced Java course from{" "}
-                    <a href="https://www.iiht.com" target="_blank">
+                    <a href="https://www.iiht.com" target="_blank" rel="noopener noreferrer">
                       IIHT
                     </a>
                     , Vadodara where I practically learned the concepts of Java
@@ -159,7 +160,7 @@ export default function Education() {
                 <Accordion.Collapse eventKey="4">
                   <Card.Body>
                     I was enrolled in C/C++ course from{" "}
-                    <a href="https://www.iiht.com" target="_blank">
+                    <a href="https://www.iiht.com" target="_blank" rel="noopener noreferrer">
                       IIHT
                     </a>
                     , Vadodara and successfully completed the course in the year
