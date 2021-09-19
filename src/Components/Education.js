@@ -150,7 +150,7 @@ export default function Education() {
                   eventKey="4">
                   <span className="mr-3 ">
                     <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
-                    C/C++ Course from IIHT, Vadodara
+                      C/C++ Course from IIHT, Vadodara
                   </span>
                   <span className="ad_subheader">2017</span>
                   <span className="down_arrow align-middle">
