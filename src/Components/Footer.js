@@ -41,6 +41,7 @@ export default function Footer() {
             </a>
             <a
               href="https://www.linkedin.com/in/kishan-gohil-9941a3193/"
+              rel="noopener noreferrer"
               target="_blank">
               <img
                 src="https://img.icons8.com/color/40/000000/linkedin.png"
@@ -77,12 +78,10 @@ export default function Footer() {
           </TextLoop> */}
           {/* <Typical
             steps={[
-              "Thank you for reaching out here ",
+              "Thank you for taking moment to review this ",
               2000,
-              "I really appreciate your time ",
-              2000,
-              "Best Regards",
-              2000,
+              "Have a great day",
+              2000
             ]}
             loop={Infinity}></Typical> */}
         </div>
