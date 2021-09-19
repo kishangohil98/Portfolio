@@ -101,6 +101,7 @@ export default function Project() {
                       <FontAwesomeIcon icon={faLink} className="pro_icon" />
                       <a
                         href="http://aksharlining.ml/"
+                        rel="noopener noreferrer"
                         target="_blank"
                         style={{ color: themes.textColor }}>
                         http://aksharlining.ml/

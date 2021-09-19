@@ -16,7 +16,7 @@ export default function App() {
   const [theme, setTheme] = useState(themes[theme_count]);
 
   const theme_toggler = () => {
-    setThemeCount((preState) => (preState == 4 ? 0 : preState + 1));
+    setThemeCount((preState) => (preState === 4 ? 0 : preState + 1));
     // if (theme_count == 4) {
     //   theme_count = 0;
     // }
@@ -33,6 +33,7 @@ export default function App() {
             <img
               src={colorIcon}
               className="color_changer"
+              alt="Theme change icon"
               onClick={theme_toggler}></img>
           </button>
         </OverlayTrigger>

@@ -80,6 +80,7 @@ export default function Education() {
                         textDecoration: "underline",
                         color: themes.textColor,
                       }}
+                      rel="noopener noreferrer"
                       target="_blank">
                       TheOneWebTechnology
                     </a>
@@ -116,6 +117,7 @@ export default function Education() {
                     <a
                       href="https://www.udemy.com/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       style={{
                         textDecoration: "underline",
                         color: themes.textColor,
@@ -151,6 +153,7 @@ export default function Education() {
                     <a
                       href="https://www.iiht.com"
                       target="_blank"
+                      rel="noopener noreferrer"
                       style={{
                         textDecoration: "underline",
                         color: themes.textColor,
@@ -186,6 +189,7 @@ export default function Education() {
                     <a
                       href="https://www.iiht.com"
                       target="_blank"
+                      rel="noopener noreferrer"
                       style={{
                         textDecoration: "underline",
                         color: themes.textColor,

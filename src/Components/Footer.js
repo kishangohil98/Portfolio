@@ -4,11 +4,9 @@ import "../css/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import footer_img from "../images/footer.png";
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
-import Typical from "react-typical";
 import WOW from "wow.js";
 import { animateScroll as scroll } from "react-scroll";
 import ThemeContext from "./ThemeContext";
-import TextLoop from "react-text-loop";
 import Typist from "react-typist";
 import TypistLoop from "react-typist-loop";
 
@@ -62,9 +60,8 @@ export default function Footer() {
         <div className="mt-4 mb-4 thankyou_line">
           <TypistLoop interval={1800}>
             {[
-              "Thank you for reaching out here ",
-              "I really appreciate your time ",
-              "Best Regards ",
+              "Thank you for taking a moment to review this ",
+              "Have a great day ",
             ].map((text) => (
               <Typist key={text} startDelay={500}>
                 {text}
