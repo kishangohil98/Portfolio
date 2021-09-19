@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useContext } from "react";
 import "../css/aboutme.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -19,11 +19,14 @@ import {
   faSyncAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import WOW from "wow.js";
+import ThemeContext from "./ThemeContext";
 
 export default function Aboutme() {
   useEffect(() => {
     new WOW().init();
   }, []);
+  const themes = useContext(ThemeContext);
+
   return (
     <Fragment>
       <div className="main">
@@ -37,23 +40,31 @@ export default function Aboutme() {
           <Row lg={2} md={2} sm={1}>
             <Col lg={6} md={6} sm={12} style={{ padding: "0px 30px" }}>
               <div className="about_me wow animate__animated animate__fadeInLeft">
-                <h3>Who's this guy?</h3>
+                <h3 className="about_me_h3" style={{ color: themes.textColor }}>
+                  Who's this guy?
+                </h3>
                 <p>
                   I am a ReactJS-Redux website developer in Vadodara, India.
                 </p>
                 <p>
                   I am a recently Graduated Computer Engineer from Gujrat
                   Technological University and having comprehension of{" "}
-                  <span className="high_light">ReactJS</span> and its core
-                  principles.
+                  <span style={{ color: themes.highlightText }}>ReactJS</span>{" "}
+                  and its core principles.
                 </p>
                 <p>
                   I possess sound technical orientation over{" "}
-                  <span className="high_light">Redux state management</span>,{" "}
-                  <span className="high_light">NodeJS</span>,{" "}
-                  <span className="high_light">JavaScript development</span> ,
-                  and Conventional{" "}
-                  <span className="high_light">web technologies.</span>
+                  <span style={{ color: themes.highlightText }}>
+                    Redux state management
+                  </span>
+                  , <span style={{ color: themes.highlightText }}>NodeJS</span>,{" "}
+                  <span style={{ color: themes.highlightText }}>
+                    JavaScript development
+                  </span>{" "}
+                  , and Conventional{" "}
+                  <span style={{ color: themes.highlightText }}>
+                    web technologies.
+                  </span>
                 </p>
                 <p>
                   I am having around 6 months of website development experience
@@ -63,14 +74,22 @@ export default function Aboutme() {
             </Col>
             <Col lg={6} md={6} sm={12} style={{ padding: "0px 30px" }}>
               <div className="about_skills wow animate__animated animate__fadeInRight">
-                <h3>Skills</h3>
+                <h3
+                  className="about_skills_h3"
+                  style={{ color: themes.textColor }}>
+                  Skills
+                </h3>
                 <div className="skills">
                   <Row className="justify-content-center">
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon icon={faReact} className="skill_icon" />
                       ReactJS
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -103,36 +122,48 @@ export default function Aboutme() {
                       </svg>
                       Redux
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon
                         icon={faJsSquare}
                         className="skill_icon"
                       />
                       JavaScript
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon icon={faNodeJs} className="skill_icon" />
                       NodeJS
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon icon={faCode} className="skill_icon" />
                       html
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon
                         icon={faCss3Alt}
                         className="skill_icon"
                       />
                       css
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon
                         icon={faBootstrap}
                         className="skill_icon"
                       />
                       Bootstrap
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -164,36 +195,48 @@ export default function Aboutme() {
                       </svg>
                       JSON
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon
                         icon={faDatabase}
                         className="skill_icon"
                       />
                       MongoDB
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon
                         icon={faTerminal}
                         className="skill_icon"
                       />
                       MySql
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon icon={faJava} className="skill_icon" />
                       Java-Servlets
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon icon={faJava} className="skill_icon" />
                       JSP
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon
                         icon={faSyncAlt}
                         className="skill_icon"
                       />
                       Ajax
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -225,11 +268,15 @@ export default function Aboutme() {
                       </svg>{" "}
                       JQuery
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <FontAwesomeIcon icon={faJava} className="skill_icon" />
                       Java
                     </p>
-                    <p className="skill">
+                    <p
+                      className="skill"
+                      style={{ backgroundColor: themes.highlightText }}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"

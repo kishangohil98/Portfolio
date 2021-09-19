@@ -18,7 +18,7 @@
 }
 .ft_line {
   font-size: 20px;
-  color: #495aff;
+  /* color: #495aff; */
 }
 
 .ft_background {
@@ -27,7 +27,7 @@
   width: 100%;
   position: relative;
   padding-bottom: 30px;
-  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  /* background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%); */
 }
 .uparrow {
   color: #fff;

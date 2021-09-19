@@ -46,10 +46,10 @@
 .blob1 {
   position: absolute;
 }
-.about_me h3 {
+.about_me_h3 {
   font-size: 32px;
   margin-bottom: 24px;
-  color: #0082c8;
+  /* color: #0082c8; */
   text-align: center;
 }
 .about_me p {
@@ -57,12 +57,12 @@
   text-align: center;
 }
 .high_light {
-  color: #0082c8;
+  /* color: #0082c8; */
 }
-.about_skills h3 {
+.about_skills_h3 {
   font-size: 32px;
   margin-bottom: 24px;
-  color: #0082c8;
+  /* color: #0082c8; */
   text-align: center;
 }
 .skills p {
@@ -72,7 +72,7 @@
 .skill {
   display: inline-block;
   color: #fff;
-  background-color: #0082c8;
+  /* background-color: #0082c8; */
   border: 1px solid inherit;
   padding: 10px 15px;
   border-radius: 2rem;

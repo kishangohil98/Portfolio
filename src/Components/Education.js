@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import "../css/education.css";
 import Accordion from "react-bootstrap/Accordion";
@@ -12,11 +12,14 @@ import {
   faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 import WOW from "wow.js";
+import ThemeContext from "./ThemeContext";
 
 export default function Education() {
   useEffect(() => {
     new WOW().init();
   }, []);
+  const themes = useContext(ThemeContext);
+
   return (
     <Fragment>
       <div>
@@ -31,6 +34,7 @@ export default function Education() {
                 <Accordion.Toggle
                   as={Card.Header}
                   className="ad_header"
+                  style={{ background: themes.edBg }}
                   eventKey="0">
                   <span className="mr-3 ">
                     <FontAwesomeIcon icon={faGraduationCap} className="mr-2" />
@@ -56,6 +60,7 @@ export default function Education() {
                 <Accordion.Toggle
                   as={Card.Header}
                   className="ad_header"
+                  style={{ background: themes.edBg }}
                   eventKey="1">
                   <span className="mr-3 ">
                     <FontAwesomeIcon icon={faAward} className="mr-2" />
@@ -71,6 +76,10 @@ export default function Education() {
                     Summer Internship 2019 at{" "}
                     <a
                       href="https://www.theonewebtechnology.com/"
+                      style={{
+                        textDecoration: "underline",
+                        color: themes.textColor,
+                      }}
                       target="_blank">
                       TheOneWebTechnology
                     </a>
@@ -86,6 +95,7 @@ export default function Education() {
                 <Accordion.Toggle
                   as={Card.Header}
                   className="ad_header"
+                  style={{ background: themes.edBg }}
                   eventKey="2">
                   <span className="mr-3 ">
                     <FontAwesomeIcon
@@ -103,7 +113,13 @@ export default function Education() {
                   <Card.Body>
                     I successfully completed 15 total hours of Front-end
                     development course provided by{" "}
-                    <a href="https://www.udemy.com/" target="_blank">
+                    <a
+                      href="https://www.udemy.com/"
+                      target="_blank"
+                      style={{
+                        textDecoration: "underline",
+                        color: themes.textColor,
+                      }}>
                       Udemy
                     </a>
                     . It was a great experience to complete the course, I got
@@ -118,6 +134,7 @@ export default function Education() {
                 <Accordion.Toggle
                   as={Card.Header}
                   className="ad_header"
+                  style={{ background: themes.edBg }}
                   eventKey="3">
                   <span className="mr-3 ">
                     <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
@@ -131,7 +148,13 @@ export default function Education() {
                 <Accordion.Collapse eventKey="3">
                   <Card.Body>
                     I was enrolled in Core Java and Advanced Java course from{" "}
-                    <a href="https://www.iiht.com" target="_blank">
+                    <a
+                      href="https://www.iiht.com"
+                      target="_blank"
+                      style={{
+                        textDecoration: "underline",
+                        color: themes.textColor,
+                      }}>
                       IIHT
                     </a>
                     , Vadodara where I practically learned the concepts of Java
@@ -146,6 +169,7 @@ export default function Education() {
                 <Accordion.Toggle
                   as={Card.Header}
                   className="ad_header"
+                  style={{ background: themes.edBg }}
                   eventKey="4">
                   <span className="mr-3 ">
                     <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
@@ -159,7 +183,13 @@ export default function Education() {
                 <Accordion.Collapse eventKey="4">
                   <Card.Body>
                     I was enrolled in C/C++ course from{" "}
-                    <a href="https://www.iiht.com" target="_blank">
+                    <a
+                      href="https://www.iiht.com"
+                      target="_blank"
+                      style={{
+                        textDecoration: "underline",
+                        color: themes.textColor,
+                      }}>
                       IIHT
                     </a>
                     , Vadodara and successfully completed the course in the year

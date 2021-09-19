@@ -1,0 +1,48 @@
+.theme_button {
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+.theme_button:hover {
+  background: transparent;
+  border: 0px solid transparent;
+  box-shadow: 0px 0px 0px transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+.theme_button:active {
+  outline: none;
+  border: none;
+}
+
+.theme_button:focus {
+  outline: 0;
+}
+.color_changer {
+  width: 50px;
+  transition: width 0.4s ease-in-out;
+  animation: icon 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+}
+.color_changer:hover {
+  width: 60px;
+}
+@keyframes icon {
+  0% {
+    width: 50px;
+  }
+  25% {
+    width: 70px;
+  }
+  50% {
+    width: 50px;
+  }
+  100% {
+    width: 50px;
+  }
+}

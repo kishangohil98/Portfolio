@@ -1,7 +1,7 @@
 .pro_backGround {
   width: 100%;
   position: relative;
-  background-image: linear-gradient(to left, #0acffe 0%, #495aff 100%);
+  /* background-image: linear-gradient(to left, #0acffe 0%, #495aff 100%); */
 }
 .project_container {
   margin-bottom: 100px;
@@ -43,7 +43,7 @@
   margin-right: 0.7rem;
 }
 .pro_highlight {
-  color: #495aff;
+  /* color: #495aff; */
 }
 @media only screen and (max-device-width: 600px) {
   .pro_card {

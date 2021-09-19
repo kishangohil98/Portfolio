@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import "../css/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,11 +7,17 @@ import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import Typical from "react-typical";
 import WOW from "wow.js";
 import { animateScroll as scroll } from "react-scroll";
+import ThemeContext from "./ThemeContext";
+import TextLoop from "react-text-loop";
+import Typist from "react-typist";
+import TypistLoop from "react-typist-loop";
 
 export default function Footer() {
   useEffect(() => {
     new WOW().init();
   }, []);
+  const themes = useContext(ThemeContext);
+
   return (
     <Fragment>
       <Container>
@@ -20,7 +26,9 @@ export default function Footer() {
           <h1 className="ft_header mb-3 wow animate__animated animate__fadeInDown">
             Let's Get Together
           </h1>
-          <p className="ft_line wow animate__animated animate__fadeInUp">
+          <p
+            className="ft_line wow animate__animated animate__fadeInUp"
+            style={{ color: themes.edBg }}>
             You can connect with me on the following, I would glad to Join you!
           </p>
           <div>
@@ -43,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      <div className="ft_background">
+      <div className="ft_background" style={{ background: themes.bi1 }}>
         <img src={footer_img} className="curve" alt="footer_image"></img>
         <FontAwesomeIcon
           className="uparrow"
@@ -51,8 +59,23 @@ export default function Footer() {
           onClick={() => scroll.scrollToTop()}
         />
         <div className="mt-4 mb-4 thankyou_line">
-          {" "}
-          <Typical
+          <TypistLoop interval={1800}>
+            {[
+              "Thank you for reaching out here ",
+              "I really appreciate your time ",
+              "Best Regards ",
+            ].map((text) => (
+              <Typist key={text} startDelay={500}>
+                {text}
+              </Typist>
+            ))}
+          </TypistLoop>
+          {/* <TextLoop springConfig={{ stiffness: 340, damping: 30 }} fade={false}>
+            <div>Thank you for reaching out here </div>
+            <div>I really appreciate your time </div>
+            <div>Best Regards</div>
+          </TextLoop> */}
+          {/* <Typical
             steps={[
               "Thank you for reaching out here ",
               2000,
@@ -61,8 +84,7 @@ export default function Footer() {
               "Best Regards",
               2000,
             ]}
-            loop={Infinity}
-          />
+            loop={Infinity}></Typical> */}
         </div>
         <div>
           <h6>Kishan Gohil &copy; 2020</h6>

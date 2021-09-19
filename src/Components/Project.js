@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import "../css/project.css";
 import projectWave from "../images/project_wave.png";
@@ -14,14 +14,17 @@ import Row from "react-bootstrap/Row";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import WOW from "wow.js";
+import ThemeContext from "./ThemeContext";
 
 export default function Project() {
   useEffect(() => {
     new WOW().init();
   }, []);
+  const themes = useContext(ThemeContext);
+
   return (
     <Fragment>
-      <div className="pro_backGround">
+      <div className="pro_backGround" style={{ background: themes.bi2 }}>
         <img src={projectWave} className="curve" alt="curve"></img>
         <Container className="project_container">
           <h1 className="project-header mt-5 wow animate__animated animate__fadeInDown">
@@ -41,10 +44,13 @@ export default function Project() {
                     <div className="pro_border"></div>
                     <Card.Text>
                       Created a Blog Website for self-learning using{" "}
-                      <span className="pro_highlight">ReactJs</span> and{" "}
-                      <span className="pro_highlight">Redux</span> state
-                      management as front-end and{" "}
-                      <span className="pro_highlight">
+                      <span style={{ color: themes.proHighLight }}>
+                        ReactJs
+                      </span>{" "}
+                      and{" "}
+                      <span style={{ color: themes.proHighLight }}>Redux</span>{" "}
+                      state management as front-end and{" "}
+                      <span style={{ color: themes.proHighLight }}>
                         MongoDB, NodeJs, ExpressJs
                       </span>{" "}
                       as back-end. I have implemented various operation such as
@@ -69,11 +75,11 @@ export default function Project() {
                       Diagnosis“ where Patient can chat with Doctor, can book
                       appointment, update their profile with necessary
                       authentication. Front-end:{" "}
-                      <span className="pro_highlight">
+                      <span style={{ color: themes.proHighLight }}>
                         JSP,html,css, Bootstarp.
                       </span>
                       Back-end:{" "}
-                      <span className="pro_highlight">
+                      <span style={{ color: themes.proHighLight }}>
                         Java Servlets, MySql
                       </span>{" "}
                       database.
@@ -93,14 +99,17 @@ export default function Project() {
                     <div className="pro_border"></div>
                     <div className="pb-3 pt-3">
                       <FontAwesomeIcon icon={faLink} className="pro_icon" />
-                      <a href="http://aksharlining.ml/" target="_blank">
+                      <a
+                        href="http://aksharlining.ml/"
+                        target="_blank"
+                        style={{ color: themes.textColor }}>
                         http://aksharlining.ml/
                       </a>
                     </div>
                     <Card.Text>
                       Developed a Business Marketing Website for “Aksharlining
                       and Furniture” and hosted in July 2019. Frontend:{" "}
-                      <span className="pro_highlight">
+                      <span style={{ color: themes.proHighLight }}>
                         html, css, Bootstrap{" "}
                       </span>{" "}
                       and bit of JavaScript. Back-end: NA

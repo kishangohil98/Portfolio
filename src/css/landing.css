@@ -27,7 +27,7 @@
 .backGround {
   width: 100%;
   position: relative;
-  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  /* background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%); */
   border-top: 1px solid transparent;
 }
 

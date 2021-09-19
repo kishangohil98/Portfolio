@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import my_picture from "../images/my_photo.jpg";
 import "../css/landing.css";
 import { Parallax } from "react-parallax";
@@ -14,11 +14,13 @@ import {
 import curve from "../images/curve.png";
 import WOW from "wow.js";
 import { Link } from "react-scroll";
+import ThemeContext from "./ThemeContext";
 
 export default function Landing() {
   useEffect(() => {
     new WOW().init();
   }, []);
+  const themes = useContext(ThemeContext);
   return (
     <>
       <div>
@@ -35,7 +37,7 @@ export default function Landing() {
             alt="My_picture"
             className="my_photo animate__animated animate__pulse"></img>
         </div>
-        <div className="backGround">
+        <div className="backGround" style={{ background: themes.bi1 }}>
           <div className="imgMargin">
             <div className="wow animate__animated animate__fadeInUp">
               <p className="heythere ">hey there !</p>
