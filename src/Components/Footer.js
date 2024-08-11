@@ -26,7 +26,8 @@ export default function Footer() {
           </h1>
           <p
             className="ft_line wow animate__animated animate__fadeInUp"
-            style={{ color: themes.edBg }}>
+            style={{ color: themes.edBg }}
+          >
             You can connect with me on the following, I would glad to Join you!
           </p>
           <div>
@@ -40,7 +41,8 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/kishan-gohil-9941a3193/"
               rel="noopener noreferrer"
-              target="_blank">
+              target="_blank"
+            >
               <img
                 src="https://img.icons8.com/color/40/000000/linkedin.png"
                 alt="Linked connect"
@@ -83,7 +85,7 @@ export default function Footer() {
             loop={Infinity}></Typical> */}
         </div>
         <div>
-          <h6>Kishan Gohil &copy; 2020</h6>
+          <h6>Kishan Gohil &copy; 2024</h6>
         </div>
       </div>
     </Fragment>
